@@ -173,24 +173,6 @@ section { margin-top: 3rem; }
 section > p { margin: 0 0 1rem; }
 em { font-style: italic; }
 
-/* ---------- News ---------- */
-.news { list-style: none; padding: 0; margin: 0; }
-.news li {
-  display: flex;
-  gap: 1.1rem;
-  padding: .45rem 0;
-  border-bottom: 1px dashed var(--rule);
-}
-.news li:last-child { border-bottom: 0; }
-.news time {
-  flex: 0 0 4.6rem;
-  color: var(--blue);
-  font-size: .85rem;
-  font-weight: 600;
-  padding-top: .1rem;
-  font-variant-numeric: tabular-nums;
-}
-
 /* ---------- Publications ---------- */
 .pubs { list-style: none; padding: 0; margin: 0; counter-reset: pub; /* set to n+1 by the script in index.html */ }
 .pubs li {
@@ -314,6 +296,4 @@ html[data-lang="fr"] [lang="en"] { display: none !important; }
   .portrait { width: 104px; height: 104px; }
   h1 { font-size: 2.1rem; }
   h2 { font-size: 1.35rem; }
-  .news li { flex-direction: column; gap: 0; }
-  .news time { flex: none; }
 }

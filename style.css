@@ -301,3 +301,10 @@ html[data-lang="fr"] [lang="en"] { display: none !important; }
 /* ---------- Skills ---------- */
 .skills { margin-top: 1.1rem !important; }
 .skills span { font-size: .78rem; padding: .15rem .65rem; }
+
+/* ---------- Project links ---------- */
+.project h3 a { color: var(--text); }
+.project h3 a:hover { color: var(--blue); text-decoration: none; }
+.project .tags { margin-bottom: .8rem !important; }
+.project-link { margin: 0 !important; font-size: .82rem !important; font-weight: 600; }
+.project-link a:hover { text-decoration: none; }

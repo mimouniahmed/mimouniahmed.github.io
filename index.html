@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ahmed Mimouni</title>
+  <meta name="description" content="Ahmed Mimouni — PhD in Computer Science, Data Scientist. Research publications in computability theory and reverse mathematics, and personal data science projects.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Choose the language before first paint: saved choice, then browser language.
+    (function () {
+      var lang;
+      try { lang = localStorage.getItem('lang'); } catch (e) {}
+      if (lang !== 'fr' && lang !== 'en') {
+        lang = (navigator.language || '').toLowerCase().indexOf('fr') === 0 ? 'fr' : 'en';
+      }
+      document.documentElement.setAttribute('data-lang', lang);
+      document.documentElement.lang = lang;
+    })();
+  </script>
+</head>
+<body>
+  <!-- Bilingual content: every translatable text exists twice, as <span lang="en"> and <span lang="fr">.
+       style.css hides the language that is not selected. Text without a lang attribute is shown in both. -->
+
+  <nav class="lang-switch" aria-label="Language">
+    <button type="button" data-set-lang="en" aria-label="English">EN</button>
+    <button type="button" data-set-lang="fr" aria-label="Français">FR</button>
+  </nav>
+
+  <main class="container">
+
+    <!-- ================= HEADER ================= -->
+    <header class="hero">
+      <div class="hero-text">
+        <h1>Ahmed Mimouni</h1>
+        <p class="subtitle">
+          <span lang="en">PhD in Computer Science · Data Scientist</span>
+          <span lang="fr">Docteur en informatique · Data Scientist</span>
+        </p>
+        <ul class="links">
+          <li><a href="mailto:amimouni.cs@gmail.com">Email</a></li>
+          <li><a href="https://arxiv.org/search/?searchtype=author&amp;query=Mimouni%2C+Ahmed">arXiv</a></li>
+          <!-- Décommentez et complétez :
+          <li><a href="assets/cv.pdf">CV</a></li>
+          <li><a href="https://github.com/USERNAME">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/USERNAME">LinkedIn</a></li>
+          -->
+        </ul>
+      </div>
+      <img class="portrait" src="assets/photo.svg" alt="Ahmed Mimouni" width="160" height="160">
+    </header>
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about">
+      <h2><span lang="en">About me</span><span lang="fr">À propos</span></h2>
+      <p lang="en">
+        I hold a PhD in Computer Science and Mathematics from
+        <a href="https://www.u-pec.fr/">Université Paris-Est Créteil</a>, where I worked at the
+        <a href="https://www.lacl.fr/">LACL</a> on computability theory and reverse mathematics.
+        I now work as a Data Scientist, most recently at KeretAI in Kuala Lumpur, building AI/ML solutions
+        for vehicle fleet management: OCR-based invoice extraction, data engineering, and an LLM assistant
+        using retrieval-augmented generation.
+      </p>
+      <p lang="fr">
+        Je suis docteur en informatique et mathématiques de
+        l'<a href="https://www.u-pec.fr/">Université Paris-Est Créteil</a>, où j'ai travaillé au
+        <a href="https://www.lacl.fr/">LACL</a> sur la calculabilité et les mathématiques à rebours.
+        Je travaille aujourd'hui comme Data Scientist, dernièrement chez KeretAI à Kuala Lumpur, sur des
+        solutions d'IA pour la gestion de flottes de véhicules : extraction de factures par OCR, data
+        engineering et assistant LLM basé sur la génération augmentée par récupération (RAG).
+      </p>
+      <p lang="en">
+        I taught computer science and mathematics for three years at UPEC (machine learning, data analysis,
+        algorithms, object-oriented programming…), and I contributed to the open-source software
+        <a href="https://www.sagemath.org/">SageMath</a>. I studied at Université Paris Cité, including the
+        Parisian Master of Research in Computer Science (MPRI).
+      </p>
+      <p lang="fr">
+        J'ai enseigné l'informatique et les mathématiques pendant trois ans à l'UPEC (apprentissage
+        automatique, analyse de données, algorithmique, programmation orientée objet…) et contribué au logiciel
+        libre <a href="https://www.sagemath.org/">SageMath</a>. J'ai étudié à l'Université Paris Cité,
+        notamment au Master Parisien de Recherche en Informatique (MPRI).
+      </p>
+    </section>
+
+    <!-- ================= RESEARCH ================= -->
+    <section id="research">
+      <h2><span lang="en">Research interests</span><span lang="fr">Thèmes de recherche</span></h2>
+      <p lang="en">
+        My research lies in mathematical logic, more precisely in <em>computability theory</em> and
+        <em>reverse mathematics</em>. I study the computational strength of combinatorial theorems such as
+        Ramsey's theorem, the Erdős–Moser theorem and the pigeonhole principle, and how this strength behaves
+        at the various levels of the arithmetical hierarchy. I have also worked on combinatorics on words.
+      </p>
+      <p lang="fr">
+        Mes recherches portent sur la logique mathématique, plus précisément la <em>calculabilité</em> et les
+        <em>mathématiques à rebours</em>. J'étudie la force calculatoire de théorèmes combinatoires comme le
+        théorème de Ramsey, le théorème d'Erdős–Moser ou le principe des tiroirs, et son comportement aux
+        différents niveaux de la hiérarchie arithmétique. J'ai aussi travaillé en combinatoire des mots.
+      </p>
+    </section>
+
+    <!-- ================= NEWS ================= -->
+    <section id="news">
+      <h2><span lang="en">News</span><span lang="fr">Actualités</span></h2>
+      <ul class="news">
+        <!-- Les actualités les plus récentes en haut -->
+        <li><time>2026-01</time>
+          <span lang="en">Joined <strong>KeretAI</strong> (Kuala Lumpur) as a Data Scientist.</span>
+          <span lang="fr">Arrivée chez <strong>KeretAI</strong> (Kuala Lumpur) en tant que Data Scientist.</span></li>
+        <li><time>2025</time>
+          <span lang="en">Defended my PhD thesis, <em>Arithmetical properties of combinatorics theorems</em>.</span>
+          <span lang="fr">Soutenance de ma thèse, <em>Arithmetical properties of combinatorics theorems</em>.</span></li>
+        <li><time>2025-08</time>
+          <span lang="en">New preprint: <em>Ramsey-like theorems and immunities</em>, with Ludovic Levy Patey.</span>
+          <span lang="fr">Nouvelle prépublication : <em>Ramsey-like theorems and immunities</em>, avec Ludovic Levy Patey.</span></li>
+        <li><time>2025-01</time>
+          <span lang="en">Paper published in the <strong>Journal of Mathematical Logic</strong>.</span>
+          <span lang="fr">Article publié dans le <strong>Journal of Mathematical Logic</strong>.</span></li>
+      </ul>
+    </section>
+
+    <!-- ================= PUBLICATIONS ================= -->
+    <section id="publications">
+      <h2><span lang="en">Publications</span><span lang="fr">Publications</span></h2>
+      <!-- Pour ajouter une publication : copiez un bloc <li>…</li> en haut de la liste. -->
+      <ol class="pubs" reversed>
+        <li>
+          <p class="pub-title">Ramsey-like theorems and immunities</p>
+          <p class="pub-authors"><span class="me">Ahmed Mimouni</span>, <a href="https://ludovicpatey.com/">Ludovic Levy Patey</a></p>
+          <p class="pub-venue"><span lang="en">Preprint</span><span lang="fr">Prépublication</span>, 2025</p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/abs/2508.15597">arXiv</a>
+            <a href="https://arxiv.org/pdf/2508.15597">PDF</a>
+          </p>
+        </li>
+        <li>
+          <p class="pub-title">The reverse mathematics of the pigeonhole hierarchy</p>
+          <p class="pub-authors">Quentin Le Houérou, <a href="https://ludovicpatey.com/">Ludovic Levy Patey</a>, <span class="me">Ahmed Mimouni</span></p>
+          <p class="pub-venue"><span lang="en">Preprint</span><span lang="fr">Prépublication</span>, 2024</p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/abs/2407.01236">arXiv</a>
+            <a href="https://hal.science/hal-04633199">HAL</a>
+            <a href="https://arxiv.org/pdf/2407.01236">PDF</a>
+          </p>
+        </li>
+        <li>
+          <p class="pub-title">The weakness of the Erdős–Moser theorem under arithmetic reductions</p>
+          <p class="pub-authors"><a href="https://ludovicpatey.com/">Ludovic Levy Patey</a>, <span class="me">Ahmed Mimouni</span></p>
+          <p class="pub-venue"><em>Journal of Mathematical Logic</em>, vol. 26, no. 2, 2026</p>
+          <p class="pub-links">
+            <a href="https://doi.org/10.1142/S0219061325500011">DOI</a>
+            <a href="https://arxiv.org/abs/2310.17968">arXiv</a>
+            <a href="https://arxiv.org/pdf/2310.17968">PDF</a>
+          </p>
+        </li>
+        <li>
+          <p class="pub-title">Recurrence and Frequencies</p>
+          <p class="pub-authors">Valérie Berthé, <span class="me">Ahmed Mimouni</span></p>
+          <p class="pub-venue"><em>Combinatorics on Words (WORDS 2023)</em>, Lecture Notes in Computer Science, Springer, pp. 91–103, 2023</p>
+          <p class="pub-links">
+            <a href="https://doi.org/10.1007/978-3-031-33180-0_7">DOI</a>
+          </p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ================= THESIS ================= -->
+    <section id="thesis">
+      <h2><span lang="en">PhD thesis</span><span lang="fr">Thèse de doctorat</span></h2>
+      <p class="pub-title">Arithmetical properties of combinatorics theorems</p>
+      <p class="pub-venue">
+        <span lang="en">PhD in Computer Science and Mathematics, Université Paris-Est Créteil, 2025</span>
+        <span lang="fr">Doctorat en informatique et mathématiques, Université Paris-Est Créteil, 2025</span>
+      </p>
+      <p class="pub-links">
+        <a href="https://doi.org/10.70675/7b8512a5z1009z4a5eza200zc6c37a09867a">theses.fr</a>
+        <!-- <a href="assets/thesis.pdf">PDF</a> -->
+      </p>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section id="projects">
+      <h2><span lang="en">Personal projects</span><span lang="fr">Projets personnels</span></h2>
+      <!-- Pour ajouter un projet : copiez un bloc <article>…</article>.
+           Pour ajouter un lien : <h3><a href="https://github.com/...">Nom</a></h3> -->
+      <div class="projects">
+        <article class="project">
+          <h3>Jungle Assist</h3>
+          <p lang="en">End-to-end Python pipeline on League of Legends data: Riot API ingestion of 12,482 matches
+            via snowball sampling (SQLite), an XGBoost win-prediction model, detection and correction of data leakage,
+            SHAP analysis, and game-plan generation with the Claude API.</p>
+          <p lang="fr">Pipeline Python de bout en bout sur des données League of Legends : collecte de 12 482 parties
+            via l'API Riot par échantillonnage boule de neige (SQLite), modèle XGBoost de prédiction de victoire,
+            détection et correction de fuites de données, analyse SHAP et génération de plans de jeu avec l'API Claude.</p>
+          <p class="tags"><span>Python</span><span>XGBoost</span><span>SHAP</span><span>SQLite</span><span>LLM</span></p>
+        </article>
+        <article class="project">
+          <h3>JEM Ticket Prioriser</h3>
+          <p lang="en">A Joint Energy-based Model trained with Langevin dynamics that prioritises bug reports
+            and flags atypical tickets for human review.</p>
+          <p lang="fr">Un modèle à énergie jointe (JEM) entraîné par dynamique de Langevin pour prioriser des
+            rapports de bugs et signaler les tickets atypiques à relire.</p>
+          <p class="tags"><span>PyTorch</span><span>Energy-based models</span><span>NLP</span></p>
+        </article>
+        <article class="project">
+          <h3>CampaignLift</h3>
+          <p lang="en">Analysis of a randomised marketing experiment on 64,000 customers: statistical tests,
+            power analysis and uplift models to target responsive customers, ending in an ROI-quantified recommendation.</p>
+          <p lang="fr">Analyse d'une expérience marketing randomisée sur 64 000 clients : tests statistiques,
+            analyse de puissance et modèles d'uplift pour cibler les clients réceptifs, avec une recommandation chiffrée en ROI.</p>
+          <p class="tags"><span>A/B testing</span><span>Uplift</span><span>Statistics</span></p>
+        </article>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; <span id="year">2026</span> Ahmed Mimouni</p>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    function setLang(lang) {
+      document.documentElement.setAttribute('data-lang', lang);
+      document.documentElement.lang = lang;
+      try { localStorage.setItem('lang', lang); } catch (e) {}
+      document.querySelectorAll('[data-set-lang]').forEach(function (b) {
+        b.setAttribute('aria-pressed', b.getAttribute('data-set-lang') === lang);
+      });
+    }
+    document.querySelectorAll('[data-set-lang]').forEach(function (b) {
+      b.addEventListener('click', function () { setLang(b.getAttribute('data-set-lang')); });
+    });
+    setLang(document.documentElement.getAttribute('data-lang'));
+  </script>
+</body>
+</html>

@@ -6,6 +6,9 @@
   <title>Ahmed Mimouni</title>
   <meta name="description" content="Ahmed Mimouni — PhD in Computer Science, Data Scientist. Research publications in computability theory and reverse mathematics, and personal data science projects.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap">
   <link rel="stylesheet" href="style.css">
   <script>
     // Choose the language before first paint: saved choice, then browser language.
@@ -24,15 +27,13 @@
   <!-- Bilingual content: every translatable text exists twice, as <span lang="en"> and <span lang="fr">.
        style.css hides the language that is not selected. Text without a lang attribute is shown in both. -->
 
-  <nav class="lang-switch" aria-label="Language">
-    <button type="button" data-set-lang="en" aria-label="English">EN</button>
-    <button type="button" data-set-lang="fr" aria-label="Français">FR</button>
-  </nav>
-
-  <main class="container">
-
-    <!-- ================= HEADER ================= -->
-    <header class="hero">
+  <!-- ================= HEADER ================= -->
+  <header class="band">
+    <nav class="lang-switch" aria-label="Language">
+      <button type="button" data-set-lang="en" aria-label="English">EN</button>
+      <button type="button" data-set-lang="fr" aria-label="Français">FR</button>
+    </nav>
+    <div class="hero">
       <div class="hero-text">
         <h1>Ahmed Mimouni</h1>
         <p class="subtitle">
@@ -50,7 +51,11 @@
         </ul>
       </div>
       <img class="portrait" src="assets/photo.svg" alt="Ahmed Mimouni" width="160" height="160">
-    </header>
+    </div>
+  </header>
+
+  <main class="container">
+
 
     <!-- ================= ABOUT ================= -->
     <section id="about">
@@ -223,6 +228,10 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+    // Reverse numbering of publications (newest = highest number).
+    document.querySelectorAll('.pubs').forEach(function (ol) {
+      ol.style.counterReset = 'pub ' + (ol.children.length + 1);
+    });
 
     function setLang(lang) {
       document.documentElement.setAttribute('data-lang', lang);

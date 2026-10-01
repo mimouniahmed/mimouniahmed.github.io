@@ -297,3 +297,7 @@ html[data-lang="fr"] [lang="en"] { display: none !important; }
   h1 { font-size: 2.1rem; }
   h2 { font-size: 1.35rem; }
 }
+
+/* ---------- Skills ---------- */
+.skills { margin-top: 1.1rem !important; }
+.skills span { font-size: .78rem; padding: .15rem .65rem; }

@@ -113,20 +113,28 @@
         </article>
         <article class="project">
           <h3><a href="https://github.com/mimouniahmed/jem-ticket-prioriser">JEM Ticket Prioriser</a></h3>
-          <p lang="en">A Joint Energy-based Model trained with Langevin dynamics that prioritises bug reports
-            and flags atypical tickets for human review.</p>
-          <p lang="fr">Un modèle à énergie jointe (JEM) entraîné par dynamique de Langevin pour prioriser des
-            rapports de bugs et signaler les tickets atypiques à relire.</p>
-          <p class="tags"><span>PyTorch</span><span>Energy-based models</span><span>NLP</span></p>
+          <p lang="en">Triage of 21,000 real Mozilla bug reports (Bugzilla API) with a Joint Energy-based Model
+            trained with Langevin dynamics. A single network ranks the backlog by urgency and flags atypical tickets
+            for human review: same accuracy as a classic MLP, but bot-generated bugs are detected with an AUROC of
+            0.70 versus 0.31. MLflow tracking, Model Registry and a command-line triage tool.</p>
+          <p lang="fr">Tri de 21 000 vrais rapports de bugs Mozilla (API Bugzilla) avec un modèle à énergie jointe
+            (JEM) entraîné par dynamique de Langevin. Un seul réseau ordonne le backlog par urgence et signale les
+            tickets atypiques à relire : même précision qu'un MLP classique, mais les bugs générés par des bots sont
+            détectés avec une AUROC de 0,70 contre 0,31. Suivi MLflow, Model Registry et outil de triage en ligne de commande.</p>
+          <p class="tags"><span>PyTorch</span><span>Energy-based models</span><span>MLflow</span><span>NLP</span></p>
           <p class="project-link"><a href="https://github.com/mimouniahmed/jem-ticket-prioriser"><span lang="en">View code on GitHub</span><span lang="fr">Voir le code sur GitHub</span> →</a></p>
         </article>
         <article class="project">
           <h3><a href="https://github.com/mimouniahmed/CampaignLift">CampaignLift</a></h3>
-          <p lang="en">Analysis of a randomised marketing experiment on 64,000 customers: statistical tests,
-            power analysis and uplift models to target responsive customers, ending in an ROI-quantified recommendation.</p>
-          <p lang="fr">Analyse d'une expérience marketing randomisée sur 64 000 clients : tests statistiques,
-            analyse de puissance et modèles d'uplift pour cibler les clients réceptifs, avec une recommandation chiffrée en ROI.</p>
-          <p class="tags"><span>A/B testing</span><span>Uplift</span><span>Statistics</span></p>
+          <p lang="en">Causal analysis of a randomised e-mail campaign on 64,000 customers: randomisation checks,
+            A/B tests, power analysis and uplift models (XGBoost T-learner, Qini with permutation tests).
+            Recommendation: send the men's e-mail to everyone, for +$18,100 profit per 100,000 customers (ROI ≈ 3.6),
+            as targeting brings no proven gain. Packaged as a tested Python command-line tool.</p>
+          <p lang="fr">Analyse causale d'une campagne d'e-mailing randomisée sur 64 000 clients : contrôle de la
+            randomisation, tests A/B, analyse de puissance et modèles d'uplift (T-learner XGBoost, Qini avec tests de
+            permutation). Recommandation : envoyer l'e-mail Hommes à tous, soit +18 100 $ de profit pour 100 000 clients
+            (ROI ≈ 3,6), le ciblage n'apportant aucun gain démontré. Le tout packagé en outil Python testé.</p>
+          <p class="tags"><span>A/B testing</span><span>Uplift</span><span>Causal inference</span><span>XGBoost</span></p>
           <p class="project-link"><a href="https://github.com/mimouniahmed/CampaignLift"><span lang="en">View code on GitHub</span><span lang="fr">Voir le code sur GitHub</span> →</a></p>
         </article>
       </div>

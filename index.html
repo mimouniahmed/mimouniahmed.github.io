@@ -101,6 +101,21 @@
       <!-- Pour ajouter un projet : copiez un bloc <article>…</article> et changez les deux liens GitHub. -->
       <div class="projects">
         <article class="project">
+          <h3><a href="https://github.com/mimouniahmed/metro-anomaly-benchmark">MetroPT Anomaly Benchmark</a></h3>
+          <p lang="en">Detection of air leaks on a Porto metro train compressor from 7 months of real sensor data:
+            34 anomaly detectors (control charts, Isolation Forest, LOF, Matrix Profile, LSTM autoencoders) compared under
+            one leakage-free, event-based protocol. Recommended setup: a CUSUM chart plus a drift-adjusted oil-temperature score,
+            4/4 failures with 0.7 false alarms per week and a 13-hour early warning. Main finding: unreported leaks in the
+            training data matter more than the algorithm.</p>
+          <p lang="fr">Détection de fuites d'air sur le compresseur d'un métro de Porto à partir de 7 mois de données de capteurs
+            réelles : 34 détecteurs d'anomalies (cartes de contrôle, Isolation Forest, LOF, Matrix Profile, autoencodeurs LSTM)
+            comparés avec un même protocole sans fuite d'information, évalué par événement. Recommandation : une carte CUSUM et un
+            score de température d'huile corrigé de la dérive, soit 4/4 pannes avec 0,7 fausse alarme par semaine et une alerte
+            13 h en avance. Constat principal : les fuites non déclarées dans les données d'apprentissage comptent plus que l'algorithme.</p>
+          <p class="tags"><span>Time series</span><span>Anomaly detection</span><span>PyTorch</span><span>Predictive maintenance</span></p>
+          <p class="project-link"><a href="https://github.com/mimouniahmed/metro-anomaly-benchmark"><span lang="en">View code on GitHub</span><span lang="fr">Voir le code sur GitHub</span> →</a></p>
+        </article>
+        <article class="project">
           <h3><a href="https://github.com/mimouniahmed/Jungle-assist">Jungle Assist</a></h3>
           <p lang="en">End-to-end Python pipeline on League of Legends data: Riot API ingestion of 12,482 matches
             via snowball sampling (SQLite), a well-calibrated XGBoost win-prediction model (ROC-AUC 0.86 on unseen matches), detection and correction of data leakage,
